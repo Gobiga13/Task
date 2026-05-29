@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+   font-family: Arial;
+   margin: 20px;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+}
+
+.card{
+   background: lightblue;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+/* Mobile View */
+@media(max-width:768px){
+   .container{
+      grid-template-columns: 1fr;
+   }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+   <div class="card">
+      <h3>Card 1</h3>
+      <p>First card content</p>
+   </div>
+
+   <div class="card">
+      <h3>Card 2</h3>
+      <p>Second card content</p>
+   </div>
+
+   <div class="card">
+      <h3>Card 3</h3>
+      <p>Third card content</p>
+   </div>
+
+</div>
+
+</body>
+</html>
